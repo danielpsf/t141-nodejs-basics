@@ -1,0 +1,16 @@
+apply plugin: 'java'
+apply plugin: 'groovy'
+apply plugin: 'eclipse'
+
+repositories {
+    jcenter()
+}
+
+sourceCompatibility = '1.8'
+
+dependencies {
+    compile group: "org.codehaus.groovy", name: "groovy-all", version: "2.4.6"
+    testCompile group: "org.spockframework", name: "spock-core", version: "1.1-groovy-2.4-rc-3"
+    testRuntime group: "cglib", name: "cglib-nodep", version: "3.2.4"
+    testRuntime group: "org.objenesis", name: "objenesis", version: "2.5.1"
+}
